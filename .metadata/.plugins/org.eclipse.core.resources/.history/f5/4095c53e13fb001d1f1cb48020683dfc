@@ -1,0 +1,5 @@
+package com.personal.main.repository;
+
+public class StudentRepository {
+
+}

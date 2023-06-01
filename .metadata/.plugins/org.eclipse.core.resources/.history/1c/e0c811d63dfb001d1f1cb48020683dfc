@@ -1,0 +1,45 @@
+package com.personal.main.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.personal.main.model.Student;
+import com.personal.main.service.StudentService;
+
+@RestController
+@RequestMapping("/api")
+public class StudentConroller {
+	
+	@Autowired
+	private StudentService stservice;
+
+	@GetMapping("/grade-list")
+	public List<Student> getUsers(){
+		return stservice.getAllUsers();
+		
+	}
+	
+	@GetMapping("/delete/{id}")
+	public String deleteStudent(@PathVariable Long id) {
+		stservice.deleteStudent(id);
+		return "redirect:/students";
+	}
+	
+	@PostMapping("/save-grade")
+	public String savestudent(@ModelAttribute("student") Student s) {
+		stservice.insertData(s);
+		return "redirect:/enter-grade";
+	}
+	
+	@GetMapping("/enter-grade")
+	public String studentForm() {
+		return "enter-grade";
+	}
+}

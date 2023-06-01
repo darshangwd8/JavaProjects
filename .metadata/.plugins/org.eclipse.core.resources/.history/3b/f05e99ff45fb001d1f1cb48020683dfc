@@ -1,0 +1,28 @@
+package com.personal.main.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import com.personal.main.model.Student;
+import com.personal.main.repository.StudentRepository;
+
+@Service
+public interface StudentService {
+	
+	 final StudentRepository studentRepository ;
+	 
+	 @Autowired
+	 public StudentService(StudentRepository sr) {
+		 this.sr = sr;
+	 }
+
+	
+	Student insertData(Student s);
+	
+	List<Student> getAllData();
+	
+    void deleteStudent(Long id);
+
+	List<Student> getAllUsers();
+}

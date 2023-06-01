@@ -1,0 +1,34 @@
+package com.personal.main.dao;
+
+import java.util.List;
+
+import com.personal.main.model.Student;
+import com.personal.main.service.StudentService;
+
+public class Studentdao implements StudentService{
+
+	@Override
+	public Student insertData(Student s) {
+		
+		return null;
+	}
+
+	@Override
+	public List<Student> getAllData() {
+		// TODO Auto-generated method stub
+		return this.getAllUsers();
+	}
+
+	@Override
+	public void deleteStudent(Long id) {
+		this.deleteStudent(id);
+		
+	}
+
+	@Override
+	public List<Student> getAllUsers() {
+		// TODO Auto-generated method stub
+		return this.getAllUsers();
+	}
+
+}

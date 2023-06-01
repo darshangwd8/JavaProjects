@@ -1,0 +1,14 @@
+package com.personal.main.service;
+
+import org.springframework.stereotype.Service;
+
+import com.personal.main.repository.StudentRepository;
+
+@Service
+public interface StudentService {
+	
+	 private final StudentRepository studentRepository ;
+	 
+		
+	
+}

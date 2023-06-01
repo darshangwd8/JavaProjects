@@ -1,0 +1,20 @@
+package com.personal.main.service;
+
+import java.util.List;
+import org.springframework.stereotype.Service;
+import com.personal.main.model.Student;
+
+@Service
+public interface StudentService {
+	
+	private final StudentRepository studentRepository;
+
+	
+	Student insertData(Student s);
+	
+	List<Student> getAllData();
+	
+    void deleteStudent(Long id);
+
+	List<Student> getAllUsers();
+}

@@ -1,0 +1,8 @@
+package com.personal.main.repository;
+
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public class StudentRepository extends JpaRepository<Stu, Long>{{
+
+}

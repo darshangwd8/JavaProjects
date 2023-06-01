@@ -1,0 +1,9 @@
+package com.personal.main.service;
+
+public interface StudentService {
+	
+	 public int GradeAverage();
+	 
+		
+	
+}

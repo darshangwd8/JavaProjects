@@ -1,0 +1,21 @@
+package com.personal.main.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.personal.main.service.StudentService;
+
+@RestController
+@RequestMapping("/api")
+public class StudentConroller {
+	
+	@Autowired
+	private StudentService stservice;
+
+	@GetMapping("/list")
+	@ResponseStatus(HttpStatus.OK)
+	public List<User> getUsers(){
+		return us.getAllUsers();
+	}
+}

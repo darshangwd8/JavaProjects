@@ -1,0 +1,16 @@
+package Service;
+
+import java.util.List;
+
+import com.personal.main.Student;
+
+public class StudentService {
+    
+	List<Student> getAllStudents();
+	
+	Student saveStudent(Student student);
+	
+	void deleteStudentById(Long id);
+
+
+}

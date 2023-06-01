@@ -1,0 +1,8 @@
+package com.personal.main.dao;
+
+import com.personal.main.service.StudentServiceIMP;
+
+public class Studentdao extends StudentServiceIMP{
+
+
+}

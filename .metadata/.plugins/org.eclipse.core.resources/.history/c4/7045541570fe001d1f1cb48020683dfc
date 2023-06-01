@@ -1,0 +1,9 @@
+package com.personal.main.service;
+
+public interface StudentService {
+	
+	 public int GradeAverage(int midterm,int  lab, int final);
+	 Student grade average = (midterm × 0.35) + (lab × 0.25) + (final × 0.40)
+		
+	
+}

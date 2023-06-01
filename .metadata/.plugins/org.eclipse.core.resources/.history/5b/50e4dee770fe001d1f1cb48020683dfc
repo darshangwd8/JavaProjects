@@ -1,0 +1,18 @@
+package com.personal.main.dao;
+
+import java.util.List;
+
+import com.personal.main.model.Student;
+import com.personal.main.service.StudentService;
+
+public class Studentdao implements StudentService{
+
+	@Override
+	public double GradeAverage(int midterm, int lab, int fnal) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	
+
+}

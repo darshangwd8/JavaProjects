@@ -1,0 +1,41 @@
+package com.personal.demo;
+
+import jakarta.persistence.Entity;
+
+public class Student {
+   private long id;
+   private String stuentId;
+   private Integer midtermGrade;
+   private Integer labGrade;
+   private Integer finalGraded;
+public long getId() {
+	return id;
+}
+public void setId(long id) {
+	this.id = id;
+}
+public String getStuentId() {
+	return stuentId;
+}
+public void setStuentId(String stuentId) {
+	this.stuentId = stuentId;
+}
+public Integer getMidtermGrade() {
+	return midtermGrade;
+}
+public void setMidtermGrade(Integer midtermGrade) {
+	this.midtermGrade = midtermGrade;
+}
+public Integer getLabGrade() {
+	return labGrade;
+}
+public void setLabGrade(Integer labGrade) {
+	this.labGrade = labGrade;
+}
+public Integer getFinalGraded() {
+	return finalGraded;
+}
+public void setFinalGraded(Integer finalGraded) {
+	this.finalGraded = finalGraded;
+}
+}
